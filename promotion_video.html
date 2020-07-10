@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>현대사 디지털아카이브 - 홍보영상</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="themes/main.min.css" />
+    	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+        <link rel="stylesheet" href="themes/panel_color.css" />
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    </head>
+    <body>
+        <div data-role="page" id="page1" >
+            <div data-role="header" data-position="fixed">
+                <h1>홍보영상</h1>
+                <a href="#leftpanel" class="ui-btn-left" data-icon="bars">메뉴</a>
+                <a href="main.html" class="ui-btn-right" data-icon="back">로그아웃</a>
+            </div>
+            <div data-role="panel" id="leftpanel" data-display="overlay" data-position="left">
+                <h1>메뉴</h1>
+                <ul data-role="listview" data-inset="true" >
+                    <li><a href="introduce.html">소개</a></li>
+                    <li><a href="history_curture_landscape.html">역사문화경관</a></li>
+                    <li><a href="Anniversary.html">국경일 및 기념일</a></li>
+                    <li><a href="event.html">행사 및 이슈</a></li>
+                    <li><a href="colleted_data.html">외부수집자료</a></li>
+                    <li><a href="exhibition.html">전시</a></li>
+                    <li><a href="collection.html">박물관 소장품</a></li>
+                    <li><a href="promotion.html">행사·홍보</a></li>
+                    <li><a href="research_education.html">연구·교육</a></li>
+                    <li><a href="education_video.html">교육영상</a></li>
+                    <li><a href="dictation_video.html">구술영상</a></li>
+                    <li><a href="publication_materials.html">발간자료</a></li>
+                    <li><a href="promotion_video.html">홍보영상</a></li>
+                </ul>
+            </div>
+            <div data-role="content">
+                <h3>YouTube Player로 재생되는 홍보영상</h3>
+                <h4>: 대한민국역사박물관 홍보 영상</h5>
+                <div id="player"></div>
+                <script>
+                      // 2. This code loads the IFrame Player API code asynchronously.
+                      var tag = document.createElement('script');
+
+                      tag.src = "https://www.youtube.com/iframe_api";
+                      var firstScriptTag = document.getElementsByTagName('script')[0];
+                      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+                      // 3. This function creates an <iframe> (and YouTube player)
+                      //    after the API code downloads.
+                      var player;
+                      function onYouTubeIframeAPIReady() {
+                        player = new YT.Player('player', {
+                          width: $(window).width() - 50,
+                          height: $(window).height() - 600,
+                          videoId: 'W271xVZNf4k',
+                          events: {
+                            'onReady': onPlayerReady,
+                            'onStateChange': onPlayerStateChange
+                          }
+                        });
+                      }
+
+                      // 4. The API will call this function when the video player is ready.
+                      function onPlayerReady(event) {
+                        event.target.playVideo();
+                      }
+
+                      // 5. The API calls this function when the player's state changes.
+                      //    The function indicates that when playing a video (state=1),
+                      //    the player should play for six seconds and then stop.
+                      var done = false;
+                      function onPlayerStateChange(event) {
+                        if (event.data == YT.PlayerState.PLAYING && !done) {
+                          setTimeout(stopVideo, 6000);
+                          done = true;
+                        }
+                      }
+                      function stopVideo() {
+                        player.stopVideo();
+                      }
+                    </script>
+    		</div>
+            <div data-role="footer" data-position="fixed">
+                <h1>1705026 이진우</h1>
+            </div>
+        </div>
+    </body>
+</html>
