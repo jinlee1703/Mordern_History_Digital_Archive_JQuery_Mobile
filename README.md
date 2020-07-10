@@ -4,6 +4,8 @@
 
 현대사 디지털아카이브의 OPEN API(xml 방식)를 통해 데이터를 받아와 박물관 홍보용 웹앱을 제작하였다.
 
+jQuery강의를 한 학기를 수강하면서 jQuery Mobile에 대해 흥미가 생겨서 jQuery Mobile을 기반으로 한 웹앱을 주제로 삼게 되었다.
+
 출처(대한민국역사박물관 현대사 디지털아카이브) : http://archive.much.go.kr/index.do
 
 
