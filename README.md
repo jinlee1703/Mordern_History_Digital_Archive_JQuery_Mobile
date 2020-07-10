@@ -8,7 +8,7 @@ jQuery강의를 한 학기를 수강하면서 jQuery Mobile에 대해 흥미가 
 
 출처(대한민국역사박물관 현대사 디지털아카이브) : http://archive.much.go.kr/index.do
   
-
+<br>
 
 ## 파일 실행 전 반드시 실행할 것
 
@@ -18,7 +18,7 @@ jQuery강의를 한 학기를 수강하면서 jQuery Mobile에 대해 흥미가 
 2. "바로 가기" 탭에서 기존의 "대상" 항목의 오른쪽에 "--disable-web-security --user-data-dir=c:\my\data" 추가 후 "확인"
 3. 이 과정은 Chrome에서 동일한 출처 정책을 사용 중지하는 것으로 실행하지 않을 경우 OPEN API를 사용할 수 없음
 
-  
+  <br>
 
 ## 참고사항
 
@@ -32,7 +32,7 @@ jQuery강의를 한 학기를 수강하면서 jQuery Mobile에 대해 흥미가 
 
 * **만약 제대로 실행이 되지 않을 경우 'F5' 키를 입력하여 새로고침 시 올바른 화면이 출력됨**
 
- 
+ <br>
 
 ### 기능 설명
 
