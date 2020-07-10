@@ -1,7 +1,3 @@
-"# Mordern_History_Digital_Archive-JQuery_Mobile-" 
-"# Mordern_History_Digital_Archive-JQuery_Mobile-" 
-"# Mordern_History_Digital_Archive_JQuery_Mobile" 
-"# Mordern_History_Digital_Archive_JQuery_Mobile" 
 # **현대사 디지털아카이브(Moredern_History_Digital_Archive)**
 
 대한민국역사박물관의 현대사 디지털아카이브의 데이터를 토대로 만든 jQuery 기반의 웹앱.
